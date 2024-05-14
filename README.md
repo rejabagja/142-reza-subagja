@@ -1,5 +1,6 @@
 # Jasa Boga Box 
 By: __Reza Subagja__
+Nomor Absen: 142
 
 Merupakan sebuah projek website sistem pemesanan online sederhana yang fokus utamanya terhadap usaha katering. Adapun pengguna sistem ini terbagi menjadi customer dan admin, yang mana untuk bisa menjalankan fitur sesuai role, pengguna harus melakukan kegiatan fitur register dan login. Untuk tampilan awal website, pengguna tidak perlu register/login untuk melihat daftar menu ataupun informasi lainnya. 
 
