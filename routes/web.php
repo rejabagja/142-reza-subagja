@@ -2,22 +2,23 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('homepage', ['title' => 'Home']) ;
-})->name("homepage");
 
-Route::get('/home', function () {
-    return redirect()->route("homepage") ;
+// route landing page
+Route::get('/', function () {
+    return view('landing.index') ;
+})->name("landing");
+
+
+Route::get('customer/dashboard', function() {
+    return view('customer.dashboard');
+});
+Route::get('customer/menu', function() {
+    return view('customer.menu');
 });
 
-Route::get("/menu", function() {
-    return view('menupage', ['title' => 'Menu']);
-})->name("menupage");
-
-Route::get("/pesanan", function() {
-    return view('orderpage', ['title' => 'Pesanan']);
-})->name("orderpage");
-
-Route::get("/profile", function() {
-    return view('profilepage', ['title' => 'Profile']);
-})->name("profilepage");
+Route::get('/login', function() {
+    return view('auth.login', ['title' => 'Login']);
+});
+Route::get('/register', function() {
+    return view('auth.register', ['title' => 'Register']);
+});
